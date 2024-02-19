@@ -50,6 +50,12 @@ class Client implements \ArrayAccess
         return $this->update(false, $data, $options);
     }
 
+    public function select(string $names): static
+    {
+        $this->request_options['query']['$select'] = $names;
+        return $this;
+    }
+
     public function expand($name)
     {
         $this->request_options['query']['$expand'] = $name;
