@@ -1,5 +1,5 @@
 {
-  "name":         "kilylabs/odata-1c",
+  "name":         "romston/odata-1c",
   "description":  "ODATA protocol client adopted to use with 1C",
   "keywords":     [
     "1c",
@@ -23,8 +23,8 @@
   },
   "authors":      [
     {
-      "name":  "Alexander Bogdanov",
-      "email": "ab@dev.kily.ru"
+      "name":  "Roman Vedenkin",
+      "email": "romston.zzz@gmail.com"
     }
   ],
   "require":      {
