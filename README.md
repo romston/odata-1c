@@ -10,7 +10,7 @@ OData клиент для 1C
 [Composer](http://getcomposer.org):
 
 ```
-$ composer require kilylabs/odata-1c
+$ composer require romston/odata-1c
 ```
 
 Использование
@@ -19,7 +19,7 @@ $ composer require kilylabs/odata-1c
 ```php
 <?php
 
-use Kily\Tools1C\OData\Client;
+use Romston\Tools1C\OData\Client;
 
 require __DIR__.'/vendor/autoload.php';
 

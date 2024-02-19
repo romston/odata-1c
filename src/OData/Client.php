@@ -1,6 +1,6 @@
 <?php
 
-namespace Kily\Tools1C\OData;
+namespace Romston\Tools1C\OData;
 
 use Psr\Http\Message\ResponseInterface;
 use GuzzleHttp\Exception\BadResponseException;

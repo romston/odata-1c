@@ -13,12 +13,12 @@
   "license":      "MIT",
   "autoload":     {
     "psr-4": {
-      "Kily\\Tools1C\\OData\\": "src/OData"
+      "Romston\\Tools1C\\OData\\": "src/OData"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Kily\\Tools1C\\OData\\Tests\\": "tests/OData/Tests"
+      "Romston\\Tools1C\\OData\\Tests\\": "tests/OData/Tests"
     }
   },
   "authors":      [

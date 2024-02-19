@@ -1,9 +1,9 @@
 <?php
 
-namespace Kily\Tools1C\OData\Tests;
+namespace Romston\Tools1C\OData\Tests;
 
-use Kily\Tools1C\OData\Client;
-use Kily\Tools1C\OData\Exception;
+use Romston\Tools1C\OData\Client;
+use Romston\Tools1C\OData\Exception;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -41,7 +41,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @covers Kily\Tools1C\OData\Client::__construct
+     * @covers Romston\Tools1C\OData\Client::__construct
      */
     public function test__construct()
     {
@@ -57,7 +57,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @covers Kily\Tools1C\OData\Client::get
+     * @covers Romston\Tools1C\OData\Client::get
      */
     public function testGet()
     {
@@ -90,7 +90,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @covers Kily\Tools1C\OData\Client::create
+     * @covers Romston\Tools1C\OData\Client::create
      */
     public function testCreate()
     {
@@ -111,7 +111,7 @@ class ClientTest extends TestCase
 
 
     /**
-     * @covers Kily\Tools1C\OData\Client::update
+     * @covers Romston\Tools1C\OData\Client::update
      */
     public function testUpdate()
     {
@@ -139,7 +139,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @covers Kily\Tools1C\OData\Client::delete
+     * @covers Romston\Tools1C\OData\Client::delete
      */
     public function testDelete()
     {
@@ -158,7 +158,7 @@ class ClientTest extends TestCase
 
 
     /**
-     * @covers Kily\Tools1C\OData\Client::request
+     * @covers Romston\Tools1C\OData\Client::request
      */
     public function testRequest()
     {
@@ -169,7 +169,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @covers Kily\Tools1C\OData\Client::getErrorMessage
+     * @covers Romston\Tools1C\OData\Client::getErrorMessage
      */
     public function testGetErrorMessage()
     {
@@ -181,7 +181,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @covers Kily\Tools1C\OData\Client::getErrorCode
+     * @covers Romston\Tools1C\OData\Client::getErrorCode
      */
     public function testGetErrorCode()
     {
@@ -193,7 +193,7 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @covers Kily\Tools1C\OData\Client::isOk
+     * @covers Romston\Tools1C\OData\Client::isOk
      */
     public function testIsOk()
     {

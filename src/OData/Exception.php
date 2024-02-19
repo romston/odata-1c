@@ -1,6 +1,6 @@
 <?php
 
-namespace Kily\Tools1C\OData;
+namespace Romston\Tools1C\OData;
 
 class Exception extends \Exception
 {
