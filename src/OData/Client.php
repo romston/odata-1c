@@ -62,6 +62,12 @@ class Client implements \ArrayAccess
         return $this;
     }
 
+    public function orderBy(string $order): static
+    {
+        $this->request_options['query']['$orderby'] = $order;
+        return $this;
+    }
+    
     public function top($cnt)
     {
         $this->request_options['query']['$top'] = $cnt;
