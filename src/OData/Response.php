@@ -7,13 +7,13 @@ use Psr\Http\Message\ResponseInterface;
 class Response
 {
     protected $response;
-    protected $clnt;
+    protected $client;
 
     private $arr;
 
-    public function __construct(Client $clnt, ResponseInterface $resp)
+    public function __construct(Client $client, ResponseInterface $resp)
     {
-        $this->client = $clnt;
+        $this->client = $client;
         $this->response = $resp;
     }
 
