@@ -344,21 +344,21 @@ class Client implements \ArrayAccess
         return $this->request('POST', []);
     }
 
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         throw new Exception('You\'re trying to write protected object');
     }
 
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return $this->response && isset($this->response->toArray()[$offset]);
     }
 
-    public function offsetUnset($offset)
+    public function offsetUnset($offset): void
     {
     }
 
-    public function offsetGet($offset)
+    public function offsetGet($offset): mixed
     {
         return $this->response && isset($this->response->toArray()[$offset]) ? $this->response->toArray()[$offset] : null;
     }
