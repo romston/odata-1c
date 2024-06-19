@@ -209,6 +209,7 @@ class Client implements \ArrayAccess
         $this->http_message = null;
         $this->odata_code = null;
         $this->odata_message = null;
+        $this->response = null;
 
         $this->request_ok = false;
         $options = array_replace_recursive($this->request_options, $options!==null ? $options : []);
