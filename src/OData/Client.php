@@ -230,7 +230,7 @@ class Client implements \ArrayAccess
             if ($e instanceof BadResponseException) {
                 if ($e->hasResponse() && ($resp = $e->getResponse())) {
                     $this->http_code = $resp->getStatusCode();
-                    $this->http_message = $resp->getReasonPhrase();
+                    $this->http_message = $resp->getReasonPhrase() . "\nContents: " . $resp->getBody()->getContents();
                 } else {
                     $this->http_code = $e->getCode();
                     $this->http_message = $e->getMessage();
